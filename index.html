@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Tasks – Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Student Tasks</h1>
+      <p class="subtitle">
+        Simple todo list to keep track of your study tasks.
+      </p>
+
+      <section class="new-task">
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            placeholder="e.g. Math, History, Biology"
+          />
+        </div>
+        <div class="field">
+          <label for="taskText">Task</label>
+          <input
+            type="text"
+            id="taskText"
+            placeholder="e.g. Chapter 3 exercises"
+          />
+        </div>
+        <button id="addBtn">Add task</button>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="done">Done</button>
+      </section>
+
+      <section class="tasks">
+        <ul id="tasksList"></ul>
+        <p class="empty" id="emptyMessage">No tasks yet. Add your first one!</p>
+      </section>
+
+      <section class="summary">
+        <p id="summaryText">0 tasks total · 0 active · 0 done</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
